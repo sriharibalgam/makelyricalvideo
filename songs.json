@@ -1,0 +1,44 @@
+{
+    "songs":[
+      {
+        "albumart": "",
+        "author": "",
+        "singer": "",
+        "starring": "Prabhas, Pooja Hegdhe",
+        "year": "2022",
+        "song": "Ee Raathale Dhoboochule",
+        "lyric":"https://sriharibalgam.github.io/makelyricalvideo/lyrics/ee-raathale.json",
+        "audio":"https://sriharibalgam.github.io/makelyricalvideo/music/ee-raathale.mp3"
+      },
+      {
+        "albumart": "",
+        "author": "",
+        "singer": "",
+        "starring": "Mahesh Babu, Keeti Suresh",
+        "year": "2022",
+        "song": "Kalavathi Song Lyrics from Sarkaru Vari Paata 2022",
+        "lyric":"https://sriharibalgam.github.io/makelyricalvideo/lyrics/ee-raathale.json",
+        "audio":"https://sriharibalgam.github.io/makelyricalvideo/music/kalavathi.mp3"
+      },
+      {
+        "albumart": "",
+        "author": "",
+        "singer": "",
+        "starring": "Sharwanand, Rashmika Mandanna",
+        "year": "2022",
+        "song": "mangalyam thanthunanena - Aadavallu meeku Joharlu",
+        "lyric":"https://sriharibalgam.github.io/makelyricalvideo/lyrics/mangalyam-adavalu-meeku-joharlu.json",
+        "audio":"https://sriharibalgam.github.io/makelyricalvideo/music/mangalyam-adavalu-meeku-joharlu.mp3"
+      },
+      {
+        "albumart": "",
+        "author": "",
+        "singer": "",
+        "starring": "Keeti Suresh",
+        "year": "2022",
+        "song": "Sundhari Sundhari",
+        "lyric":"https://sriharibalgam.github.io/makelyricalvideo/lyrics/sundhari.json",
+        "audio":"https://sriharibalgam.github.io/makelyricalvideo/music/sundhari.mp3"
+      }
+    ]
+  }
