@@ -7,8 +7,8 @@
         "starring": "Prabhas, Pooja Hegdhe",
         "year": "2022",
         "song": "Ee Raathale Dhoboochule",
-        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/ee-raathale.json",
-        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/ee-raathale.mp3"
+        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/ee-raathale-dhoboochule-song-lyrics.json",
+        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/ee-raathale-dhoboochule-song-lyrics.mp3"
       },
       {
         "albumart": "",
@@ -17,8 +17,8 @@
         "starring": "Mahesh Babu, Keeti Suresh",
         "year": "2022",
         "song": "Kalavathi Song Lyrics from Sarkaru Vari Paata 2022",
-        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/ee-raathale.json",
-        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/kalaavathi.mp3"
+        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/kalavati-song-lyrics.json",
+        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/kalavati-song-lyrics.mp3"
       },
       {
         "albumart": "",
@@ -32,13 +32,13 @@
       },
       {
         "albumart": "",
-        "author": "",
-        "singer": "",
+        "author": "Suddhala Ashok Teja",
+        "singer": "Ananya Bhat",
         "starring": "Keeti Suresh",
         "year": "2022",
-        "song": "Sundhari Sundhari",
-        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/sundhari.json",
-        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/sundhari.mp3"
+        "song": "Gandhari Gandhari",
+        "lyric":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/lyrics/gandhari-gandhari-song-lyrics-from.json",
+        "audio":"https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/music/gandhari-gandhari-song-lyrics-from.mp3"
       }
     ]
   }

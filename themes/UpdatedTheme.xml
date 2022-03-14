@@ -558,13 +558,13 @@ h2.hero-title{display:block;font-family:var(--title-font);font-size:33px;color:v
 .rtl #hero-wrapper .search-action{left:0;right:unset}
 #hero-wrapper .search-action:before{content:'\f002';font-family:'Font Awesome 5 Free';font-weight:900;margin:0}
 #hero-wrapper .search-action:hover{opacity:1}
-#header-ads-wrap{display:none;position:relative;float:left;width:100%;z-index:10;margin:0;border-bottom:1px solid var(--border-color)}
+#header-ads-wrap{display:block;position:relative;float:left;width:100%;z-index:10;margin:0;border-bottom:1px solid var(--border-color)}
 #header-ads-wrap.has-widget{display:block}
 #header-ads-wrap .container{margin:0 auto}
 .header-ads .widget{position:relative;float:left;width:100%;text-align:center;line-height:0;margin:20px 0}
 .is-post #header-ads-wrap .widget{margin:20px 0}
 .header-ads .widget-content{float:left;width:100%;margin:0}
-.header-ads .widget > .widget-title{display:none}
+.header-ads .widget > .widget-title{display:block}
 .loader{position:relative;height:100%;overflow:hidden;display:block;margin:0}
 .loader:after{content:'';position:absolute;top:50%;left:50%;width:28px;height:28px;margin:-16px 0 0 -16px;border:2px solid var(--main-color);border-right-color:var(--border-color);border-radius:100%;animation:spinner .65s infinite linear;transform-origin:center}
 @-webkit-keyframes spinner {
@@ -767,7 +767,7 @@ ul.description-links.show{display:table}
 .description-links li a{display:block;font-size:14px;color:var(--text-color);line-height:1;box-sizing:border-box;padding:0}
 .description-links li a:hover{opacity:.85}
 #related-wrap{float:left;width:100%;margin:35px 0 0}
-#related-wrap .related-tag{display:none}
+#related-wrap .related-tag{display:block}
 .freebify-free-related-content{float:left;width:100%;margin:0}
 .freebify-free-related-content .loader{height:191.6px}
 .related-posts{position:relative;display:flex;flex-wrap:wrap;padding:0;margin:0 -12.5px}
@@ -986,13 +986,13 @@ html[data-theme=dark] .follow-by-email-address{background-color:rgba(255,255,255
 .Attribution .copyright{font-size:12px;color:var(--meta-color);padding:0 20px;margin:3px 0 0}
 .TextList ul li{display:block;font-size:14px;font-weight:400;color:var(--text-color);margin:0 0 10px}
 .TextList ul li:last-child{margin:0}
-#footer-ads-wrap{display:none;position:relative;float:left;width:100%;z-index:10;margin:0;border-top:1px solid var(--border-color)}
+#footer-ads-wrap{display:block;position:relative;float:left;width:100%;z-index:10;margin:0;border-top:1px solid var(--border-color)}
 #footer-ads-wrap.has-widget{display:block}
 #footer-ads-wrap .container{margin:0 auto}
 .footer-ads .widget{position:relative;float:left;width:100%;text-align:center;line-height:0;margin:20px 0}
 .is-post #footer-ads-wrap .widget{margin:20px 0}
 .footer-ads .widget-content{float:left;width:100%;margin:0}
-.footer-ads .widget > .widget-title{display:none}
+.footer-ads .widget > .widget-title{display:block}
 #footer-wrapper{position:relative;float:left;width:100%;background-color:var(--footer-bg);color:var(--footer-text-color);margin:0}
 #footer-wrapper.has-border{border-top:1px solid var(--border-color)}
 html[data-theme=dark] #footer-wrapper.has-border{border:0}
@@ -1076,7 +1076,7 @@ color: #4309c2;
 .holder {
 max-height: 550px;
 max-width: 550px;
-border: 2px solid black;position: relative;
+border: 2px solid black;position: relative; margin: 10px 0px;
 }
 .holder img {
 max-width: 100%;
@@ -1090,13 +1090,33 @@ input[type="file"] {
 border: 1px solid #ccc;display: block;padding: 6px 12px;cursor: pointer;border-radius: 25px
 }
 .lyrics-download-link > a { border-radius: 25px !important; }
-.upload-image{margin: 10px 0px;}
-.upload-image > h6 { margin: 0px; }
-.lyrics-over {position: absolute; top: 0px;left: 0px;font-size: 18px; text-align: justify;padding: 10px; color: #4412bd;font-weight: 500; font-family: cursive;text-overflow: clip;}
+.upload-image, .upload-image > h6 { margin: 10px 0px; }
+.lyrics-over { position: absolute; top: 0px; left: 0px; font-size: 18px; text-align: justify; padding: 5px; color: #4412bd; font-weight: 500; font-family: cursive; text-overflow: clip; line-height: 16px; height: 550px; }
+#lyric-container-en {color: #6401ae; font-size: larger; font-weight: 800; transition: font-size ease-in 2s;}
 #lyricalPhoto {background-color: var(--button-bg); border-radius: 50%; height: 40px; width: 40px; position: relative; top: -23px; left: 533px;}
 .button.downloadpdf:before {content: '\f019'; padding: 0; margin-left: -9px; height: 20px; width: 20px; font-size: 20px;}
 .lrycal-video-tool-section {margin: 10px 0px; padding: 10px; border-top: 2px solid #6401ae; border-radius: 9px; border-bottom: 1px solid #6401ae;}
-
+audio {
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  transition:all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 0px #470073;
+  -webkit-box-shadow:  2px 2px 4px 0px #470073;
+  box-shadow: 2px 2px 4px 0px #470073;
+  -moz-border-radius:7px 7px 7px 7px ;
+  -webkit-border-radius:7px 7px 7px 7px ;
+  border-radius:7px 7px 7px 7px ;
+}
+audio:hover, audio:focus, audio:active, a:hover, a:active {
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+#audio { position: fixed; top: 50%;right: 35%;}
 @media (max-width: 1164px) {
 #outer-wrapper,.is-boxed #outer-wrapper,.is-boxed .headerify-inner{width:100%;max-width:100%;margin:0}
 .row-x1{width:100%;max-width:100%}
@@ -1140,6 +1160,7 @@ border: 1px solid #ccc;display: block;padding: 6px 12px;cursor: pointer;border-r
 .related-posts .related-item{width:calc(100% / 2)}
 .related-posts .related-item.item-2{margin:30px 0 0}
 .post-body .file-btn a.button{min-width:70%}
+#audio { position: fixed;top: 35%;right: 0%;}
 }
 @media (max-width: 480px) {
 #hero-wrapper{padding:60px 0}
@@ -1159,6 +1180,7 @@ h2.hero-title{font-size:30px}
 .PopularPosts .big-popular .entry-title{font-size:21px}
 .FeaturedPost .featured-post .entry-image-wrap{height:200px}
 .FeaturedPost .featured-post .entry-title{font-size:21px}
+#audio { position: fixed;top: 35%; right: -62%;}
 }
 @media (max-width: 380px) {
 #hero-wrapper{padding:50px 0}
@@ -1175,6 +1197,7 @@ h2.hero-title{font-size:27px}
 .FeaturedPost .featured-post .entry-image-wrap{height:165px}
 .FeaturedPost .featured-post .entry-title{font-size:19px}
 .errorWrap h3{font-size:130px}
+#audio { position: fixed;top: 35%; right: -62%;}
 }
 @media (max-width: 320px) {
 #slide-menu{width:100%}
@@ -1660,7 +1683,9 @@ var fixedMenu = true,
         <b:include data='post' name='postHeader'/>
       </div>
     </b:includable>
-    <b:includable id='inlineAd' var='post'><b:comment>Removed :)</b:comment></b:includable>
+    <b:includable id='inlineAd' var='post'>
+    <h1>Mama I ama here </h1>
+    </b:includable>
     <b:includable id='itemPost' var='post'>
       <!-- Item Post Content -->
       <b:include data='post' name='postMeta'/>
@@ -1710,7 +1735,16 @@ var fixedMenu = true,
       <!-- Post Author -->
       <span class='entry-author m-item'><b:if cond='data:post.author.authorPhoto.image'><span class='author-avatar m-item' expr:style='&quot;background-image:url(&quot; + resizeImage(data:post.author.authorPhoto.image, 30, &quot;1:1&quot;) + &quot;)&quot;'/><b:else/><span class='author-avatar m-item' style='background-image:url(https://4.bp.blogspot.com/-oSjP8F09qxo/Wy1J9dp7b0I/AAAAAAAACF0/ggcRfLCFQ9s2SSaeL9BFSE2wyTYzQaTyQCK4BGAYYCw/w30-h30-p-k-no-nu/avatar.jpg)'/></b:if><b:if cond='data:allBylineItems.author.label != &quot;&quot;'><span class='a-label m-item'><data:allBylineItems.author.label/></span></b:if><span class='author-name m-item'><data:post.author.name/></span></span>
     </b:includable>
-    <b:includable id='postBody' var='post'> 
+    <b:includable id='postBody' var='post'>
+      <!-- Post Header Ads -->
+      <div id="before-ad">
+        <div class="widget HTML" data-version="2" id="HTML4">
+          <div class="widget-content">
+            <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
+            <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Post ADS 1" /></a>
+          </div>
+        </div>
+      </div>
       <!-- Post Body Entry Content-->
       <div class='post-body entry-content' id='post-body'>
         <data:post.body/>
@@ -1737,8 +1771,18 @@ var fixedMenu = true,
           <div id="audio"></div>
         </div>
       </div>
+      <!-- Post Footer Ads -->
+      <div id="after-ad">
+        <div class="widget HTML" data-version="2" id="HTML6">
+          <div class="widget-content">
+            <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
+              <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Post ADS 2" />
+            </a>
+          </div>
+        </div>
+      </div>
     </b:includable>
-    <b:includable id='postBodySnippet' var='post'><b:comment>Removed :)</b:comment></b:includable>
+    <b:includable id='postBodySnippet' var='post'></b:includable>
     <b:includable id='postBreadcrumbs' var='post'>
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
@@ -2457,7 +2501,7 @@ var fixedMenu = true,
               </div>
               <nav class='main-menu-wrap'>
                 <b:section class='freebify-free-main-menu' id='freebify-free-main-menu' maxwidgets='1' name='Main Menu' showaddelement='no'>
-                  <b:widget id='LinkList152' locked='true' title='Main Menu' type='LinkList' visible='true'>
+                  <b:widget id='LinkList152' locked='false' title='Main Menu' type='LinkList' visible='true'>
                     <b:widget-settings>
                       <b:widget-setting name='text-10'>Tamil Songs</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -2621,7 +2665,7 @@ var fixedMenu = true,
               <b:widget-setting name='showLabels'>true</b:widget-setting>
               <b:widget-setting name='postLabelsLabel'>Tags:</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>true</b:widget-setting>
               <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
@@ -2766,7 +2810,7 @@ var fixedMenu = true,
         <b:include data='post' name='postHeader'/>
       </div>
     </b:includable>
-            <b:includable id='inlineAd' var='post'><b:comment>Removed :)</b:comment></b:includable>
+            <b:includable id='inlineAd' var='post'></b:includable>
             <b:includable id='itemPost' var='post'>
       <!-- Item Post Content -->
       <b:include data='post' name='postMeta'/>
@@ -3247,28 +3291,28 @@ var fixedMenu = true,
             </b:widget>
             <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' visible='true'>
               <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<a class="ads-here" href="https://www.templateify.com/2020/07/freebify-blogger-template.html"><img src="https://1.bp.blogspot.com/-TGjQKiW8Fj4/XwTtHbFJWVI/AAAAAAAACTM/YLcre4aIIv0Swn67Z922xF4fR-mMn3ZZACK4BGAYYCw/s1600/ad300.jpg" alt="Sidebar ADS"/></a>]]></b:widget-setting>
+                <b:widget-setting name='content'><![CDATA[<a class="ads-here" href="https://makelyricalvideo.blogspot.com/"><img src="https://1.bp.blogspot.com/-TGjQKiW8Fj4/XwTtHbFJWVI/AAAAAAAACTM/YLcre4aIIv0Swn67Z922xF4fR-mMn3ZZACK4BGAYYCw/s1600/ad300.jpg" alt="Sidebar ADS"/></a>]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
-      <b:if cond='data:widget.sectionId == &quot;ify-panel&quot;'>
-        <b:if cond='data:content != &quot;&quot;'>
-          <b:include name='theme-variables'/>
-        </b:if>
-        <b:else/>
-        <b:include name='widget-title'/>
-        <div class='widget-content'>
-          <data:content/>
-        </div>
-      </b:if>
-    </b:includable>
+                <b:if cond='data:widget.sectionId == &quot;ify-panel&quot;'>
+                  <b:if cond='data:content != &quot;&quot;'>
+                    <b:include name='theme-variables'/>
+                  </b:if>
+                  <b:else/>
+                  <b:include name='widget-title'/>
+                  <div class='widget-content'>
+                    <data:content/>
+                  </div>
+                </b:if>
+              </b:includable>
             </b:widget>
             <b:widget id='Label2' locked='false' title='Main Tags' type='Label' visible='true'>
               <b:widget-settings>
                 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
                 <b:widget-setting name='display'>CLOUD</b:widget-setting>
-                <b:widget-setting name='selectedLabelsList'>Apps,Beach,Bitcoin,Business,Economy,Fashion,Food,People,Photography,Technology,Travel,World</b:widget-setting>
+                <b:widget-setting name='selectedLabelsList'>Telugu songs, Hindhi Songs, Punjabi Songs</b:widget-setting>
                 <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
-                <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+                <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -3299,6 +3343,18 @@ var fixedMenu = true,
           </b:section>
         </aside>
       </b:if>
+    </div>
+  </div>
+  <!-- Footer Wrapper -->
+  <div class="has-widget" id="footer-ads-wrap">
+    <div class="footer-ads container row-x1 section" id="footer-ads" name="Footer ADS">
+      <div class="widget HTML" data-version="2" id="HTML3">
+        <div class="widget-content">
+          <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
+          <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Footer AD" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Footer Wrapper -->
@@ -3483,7 +3539,7 @@ Search for  your favorite lyrics based on your mood and turn them into photos an
   <b:if cond='data:view.isSingleItem'>
     <div id='hidden-widgets-wrap' style='display:block'>
       <b:section class='hidden-widgets' deleted='true' id='hidden-widgets' maxwidgets='2' showaddelement='no'>
-        <b:widget id='ContactForm1' locked='true' title='Contact Form' type='ContactForm' visible='true'>
+        <b:widget id='ContactForm1' locked='false' title='Contact Form' type='ContactForm' visible='true'>
           <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
       <b:include name='content'/>
@@ -3534,25 +3590,31 @@ var _$_obify3=["\x50\x20\x61\x24\x6B\x3D\x5B\x22\x5C\x31\x52\x22\x2C\x22\x5C\x69
 // Tool Script
 $(document).ready(() => {
   if($(location).attr('href').indexOf('/p/') > 0) {
-    $('#lyricalPhoto').hide();
+    $('.lrycal-video-tool-section').remove();
   }
   var songs = [];
   var imageURI = '';
   $('.holder').hide();
   $('#lyricalPhoto').hide();
 
-  fetch('https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/main/songs.json')
+  fetch('https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/songs.json')
     .then(response => response.json())
     .then(json => {
-          console.log(json.songs[0]);
-          songs.push(json.songs);
+          const songNameFromURL = $(location).attr('pathname').split('/')[3].split('.')[0];
+          
+          songs = json.songs;
+          console.log('Songs:: ', songs);
+          const playAudio = songs.filter(s => s.audio.indexOf(songNameFromURL) );
+          console.log(playAudio, songNameFromURL);
+          if(playAudio) {
             //<![CDATA[
-            var audiTag = `<audio id="cross" artist="José González" imagesrc="${json.songs[0].albumart}" src="${json.songs[0].audio}" preload="auto"  controls autoplay>
+            var audiTag = `<audio id="cross" artist="${json.songs[0].singer}" imagesrc="${json.songs[0].albumart}" src="${json.songs[0].audio}" preload="auto" controls autoplay>
                             <p>If you are reading this, it is because your browser does not support the audio element.</p>
                           </audio>`;
           //]]>
             console.log(audiTag);
             $('#audio').append(audiTag);
+          }
   });
     
   // Get Lyrics
@@ -3598,6 +3660,7 @@ $(document).ready(() => {
         };
         reader.readAsDataURL(file);
       $('.lyrics-over').text(lyricsText);
+      $('#lyricalPhoto').show();
     }
   });
 });
