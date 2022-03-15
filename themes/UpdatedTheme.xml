@@ -1109,14 +1109,14 @@ audio {
   border-radius:7px 7px 7px 7px ;
 }
 audio:hover, audio:focus, audio:active, a:hover, a:active {
--webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
--moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-box-shadow: 15px 15px 20px #470073;
+-moz-box-shadow: 15px 15px 20px #470073;
+box-shadow: 15px 15px 20px #470073;
 -webkit-transform: scale(1.05);
 -moz-transform: scale(1.05);
 transform: scale(1.05);
 }
-#audio { position: fixed; top: 50%;right: 35%;}
+#audio { position: fixed; top: 60%; right: 34%;}
 @media (max-width: 1164px) {
 #outer-wrapper,.is-boxed #outer-wrapper,.is-boxed .headerify-inner{width:100%;max-width:100%;margin:0}
 .row-x1{width:100%;max-width:100%}
@@ -1180,7 +1180,7 @@ h2.hero-title{font-size:30px}
 .PopularPosts .big-popular .entry-title{font-size:21px}
 .FeaturedPost .featured-post .entry-image-wrap{height:200px}
 .FeaturedPost .featured-post .entry-title{font-size:21px}
-#audio { position: fixed;top: 35%; right: -62%;}
+#audio { position: fixed;top: 35%; right: -64%;}
 }
 @media (max-width: 380px) {
 #hero-wrapper{padding:50px 0}
@@ -1197,7 +1197,7 @@ h2.hero-title{font-size:27px}
 .FeaturedPost .featured-post .entry-image-wrap{height:165px}
 .FeaturedPost .featured-post .entry-title{font-size:19px}
 .errorWrap h3{font-size:130px}
-#audio { position: fixed;top: 35%; right: -62%;}
+#audio { position: fixed;top: 35%; right: -64%;}
 }
 @media (max-width: 320px) {
 #slide-menu{width:100%}
@@ -1737,11 +1737,11 @@ var fixedMenu = true,
     </b:includable>
     <b:includable id='postBody' var='post'>
       <!-- Post Header Ads -->
-      <div id="before-ad">
-        <div class="widget HTML" data-version="2" id="HTML4">
-          <div class="widget-content">
-            <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
-            <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Post ADS 1" /></a>
+      <div id='before-ad'>
+        <div class='widget HTML' data-version='2' id='HTML4'>
+          <div class='widget-content'>
+            <a class='ads-here' href='https://makelyricalvideo.blogspot.com' target='_blank'>
+            <img alt='Post ADS 1' src='https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg'/></a>
           </div>
         </div>
       </div>
@@ -1749,40 +1749,40 @@ var fixedMenu = true,
       <div class='post-body entry-content' id='post-body'>
         <data:post.body/>
         <!--Utils #MakeLyricalVideo-->
-        <div class="lrycal-video-tool-section">
-          <div class="lyrics-download-link">
-            <a class="button copy colored-button" id="copyLyrics" style="background-color: #34495e;">Copy Lyrics</a>
-            <a class="button download colored-button" href="javascript:void(0);" id="downloadPdfLyrics" style="background-color: #2980b9;">Download Lyrics as PDF</a>
+        <div class='lrycal-video-tool-section'>
+          <div class='lyrics-download-link'>
+            <a class='button copy colored-button' id='copyLyrics' style='background-color: #34495e;'>Copy Lyrics</a>
+            <a class='button download colored-button' href='javascript:void(0);' id='downloadPdfLyrics' style='background-color: #2980b9;'>Download Lyrics as PDF</a>
           </div>
 
-          <form id="upload-form">
-            <div class="upload-image">
+          <form id='upload-form'>
+            <div class='upload-image'>
               <h6>Do you wanna generate a Lyrical Photo/Lyrical Video with this Lyrics. Click on *Upload Your Photo*</h6> 
-              <input accept="image/png, image/jpeg" class="button upload" id="photo" name="photograph" required="true" type="file" />
+              <input accept='image/png, image/jpeg' class='button upload' id='photo' name='photograph' required='true' type='file'/>
             </div>
           
-            <div class="holder">
-              <img alt="Lyrical Post" id="imgPreview" src="#" />
-              <div class="lyrics-over"></div>
+            <div class='holder'>
+              <img alt='Lyrical Post' id='imgPreview' src='#'/>
+              <div class='lyrics-over'/>
             </div>
-            <a class="button downloadpdf" href="#" id="lyricalPhoto" rel="nofollow"></a>
+            <a class='button downloadpdf' href='#' id='lyricalPhoto' rel='nofollow'/>
           </form>
 
-          <div id="audio"></div>
+          <div id='audio'/>
         </div>
       </div>
       <!-- Post Footer Ads -->
-      <div id="after-ad">
-        <div class="widget HTML" data-version="2" id="HTML6">
-          <div class="widget-content">
-            <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
-              <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Post ADS 2" />
+      <div id='after-ad'>
+        <div class='widget HTML' data-version='2' id='HTML6'>
+          <div class='widget-content'>
+            <a class='ads-here' href='https://makelyricalvideo.blogspot.com' target='_blank'>
+              <img alt='Post ADS 2' src='https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg'/>
             </a>
           </div>
         </div>
       </div>
     </b:includable>
-    <b:includable id='postBodySnippet' var='post'></b:includable>
+    <b:includable id='postBodySnippet' var='post'/>
     <b:includable id='postBreadcrumbs' var='post'>
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
@@ -2506,17 +2506,18 @@ var fixedMenu = true,
                       <b:widget-setting name='text-10'>Tamil Songs</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='link-1'>#</b:widget-setting>
-                      <b:widget-setting name='link-2'>#</b:widget-setting>
+                      <b:widget-setting name='link-2'>/</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='link-11'>/p/punjabi-songs.html</b:widget-setting>
-                      <b:widget-setting name='link-10'>/p/tamil-songs.html</b:widget-setting>
+                      <b:widget-setting name='link-11'>/search/label/Punjabi</b:widget-setting>
+                      <b:widget-setting name='link-10'>/search/label/Tamil%20Songs</b:widget-setting>
                       <b:widget-setting name='text-9'>Telugu Songs</b:widget-setting>
-                      <b:widget-setting name='link-9'>/p/telugu-songs.html</b:widget-setting>
+                      <b:widget-setting name='link-9'>/search/label/Telugu%20Songs</b:widget-setting>
                       <b:widget-setting name='text-8'>Hindhi Songs</b:widget-setting>
                       <b:widget-setting name='link-7'>/404</b:widget-setting>
-                      <b:widget-setting name='link-8'>/p/hindhi-songs.html</b:widget-setting>
+                      <b:widget-setting name='link-8'>/search/label/Hindhi%20Songs</b:widget-setting>
+                      <b:widget-setting name='link-5'>/</b:widget-setting>
                       <b:widget-setting name='link-6'>/</b:widget-setting>
-                      <b:widget-setting name='link-3'>#</b:widget-setting>
+                      <b:widget-setting name='link-3'>/</b:widget-setting>
                       <b:widget-setting name='link-4'>/</b:widget-setting>
                       <b:widget-setting name='text-1'>Movie Albums</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -2654,14 +2655,14 @@ var fixedMenu = true,
               <b:widget-setting name='showLocation'>false</b:widget-setting>
               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showDateHeader'>false</b:widget-setting>
               <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#6c6cfe</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showAuthor'>true</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#f5f6f7</b:widget-setting>
-              <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showLabels'>true</b:widget-setting>
               <b:widget-setting name='postLabelsLabel'>Tags:</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
@@ -2810,7 +2811,7 @@ var fixedMenu = true,
         <b:include data='post' name='postHeader'/>
       </div>
     </b:includable>
-            <b:includable id='inlineAd' var='post'></b:includable>
+            <b:includable id='inlineAd' var='post'/>
             <b:includable id='itemPost' var='post'>
       <!-- Item Post Content -->
       <b:include data='post' name='postMeta'/>
@@ -2865,26 +2866,26 @@ var fixedMenu = true,
       <div class='post-body entry-content' id='post-body'>
         <data:post.body/>
         <!--Utils #MakeLyricalVideo-->
-        <div class="lrycal-video-tool-section">
-          <div class="lyrics-download-link">
-            <a class="button copy colored-button" id="copyLyrics" style="background-color: #34495e;">Copy Lyrics</a>
-            <a class="button download colored-button" href="javascript:void(0);" id="downloadPdfLyrics" style="background-color: #2980b9;">Download Lyrics as PDF</a>
+        <div class='lrycal-video-tool-section'>
+          <div class='lyrics-download-link'>
+            <a class='button copy colored-button' id='copyLyrics' style='background-color: #34495e;'>Copy Lyrics</a>
+            <a class='button download colored-button' href='javascript:void(0);' id='downloadPdfLyrics' style='background-color: #2980b9;'>Download Lyrics as PDF</a>
           </div>
           
-          <form id="upload-form">
-            <div class="upload-image">
+          <form id='upload-form'>
+            <div class='upload-image'>
               <h6>Do you wanna generate a Lyrical Photo/Lyrical Video with this Lyrics. Click on *Upload Your Photo*</h6>  
-              <input accept="image/png, image/jpeg" class="button upload" id="photo" name="photograph" required="true" type="file" />
+              <input accept='image/png, image/jpeg' class='button upload' id='photo' name='photograph' required='true' type='file'/>
             </div>
           
-            <div class="holder">
-              <img alt="Lyrical Post" id="imgPreview" src="#" />
-              <div class="lyrics-over"></div>
+            <div class='holder'>
+              <img alt='Lyrical Post' id='imgPreview' src='#'/>
+              <div class='lyrics-over'/>
             </div>
-            <a class="button downloadpdf" href="#" id="lyricalPhoto" rel="nofollow"></a>
+            <a class='button downloadpdf' href='#' id='lyricalPhoto' rel='nofollow'/>
           </form>
 
-          <div id="audio"></div>
+          <div id='audio'> </div>
         </div>
       </div>
     </b:includable>
@@ -3171,6 +3172,7 @@ var fixedMenu = true,
               <b:widget-settings>
                 <b:widget-setting name='link-3'>https://instagram.com/makelyricalvideo $ Instagram</b:widget-setting>
                 <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                <b:widget-setting name='link-4'>https://makelyricalvideo.blogspot.com/</b:widget-setting>
                 <b:widget-setting name='text-1'>youtube</b:widget-setting>
                 <b:widget-setting name='link-1'>https://www.youtube.com/c/SrihariSanthosh $ YouTube</b:widget-setting>
                 <b:widget-setting name='text-0'>twitter</b:widget-setting>
@@ -3179,7 +3181,6 @@ var fixedMenu = true,
                 <b:widget-setting name='link-0'>https://twitter.com/sriharibalgam $ Twitter</b:widget-setting>
                 <b:widget-setting name='text-2'>facebook-f</b:widget-setting>
                 <b:widget-setting name='text-4'>blogger</b:widget-setting>
-                <b:widget-setting name='link-4'>https://makelyricalvideo.blogspot.com/</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -3289,7 +3290,7 @@ var fixedMenu = true,
               <b:includable id='snippetedPostTitle'><b:comment>Removed :)</b:comment></b:includable>
               <b:includable id='snippetedPosts'><b:comment>Removed :)</b:comment></b:includable>
             </b:widget>
-            <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' visible='true'>
+            <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' version='2' visible='true'>
               <b:widget-settings>
                 <b:widget-setting name='content'><![CDATA[<a class="ads-here" href="https://makelyricalvideo.blogspot.com/"><img src="https://1.bp.blogspot.com/-TGjQKiW8Fj4/XwTtHbFJWVI/AAAAAAAACTM/YLcre4aIIv0Swn67Z922xF4fR-mMn3ZZACK4BGAYYCw/s1600/ad300.jpg" alt="Sidebar ADS"/></a>]]></b:widget-setting>
               </b:widget-settings>
@@ -3310,8 +3311,8 @@ var fixedMenu = true,
               <b:widget-settings>
                 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
                 <b:widget-setting name='display'>CLOUD</b:widget-setting>
-                <b:widget-setting name='selectedLabelsList'>Telugu songs, Hindhi Songs, Punjabi Songs</b:widget-setting>
-                <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+                <b:widget-setting name='selectedLabelsList'/>
+                <b:widget-setting name='showType'>ALL</b:widget-setting>
                 <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='this'>
@@ -3346,12 +3347,12 @@ var fixedMenu = true,
     </div>
   </div>
   <!-- Footer Wrapper -->
-  <div class="has-widget" id="footer-ads-wrap">
-    <div class="footer-ads container row-x1 section" id="footer-ads" name="Footer ADS">
-      <div class="widget HTML" data-version="2" id="HTML3">
-        <div class="widget-content">
-          <a class="ads-here" href="https://makelyricalvideo.blogspot.com" target="_blank">
-          <img src="https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg" alt="Footer AD" />
+  <div class='has-widget' id='footer-ads-wrap'>
+    <div class='footer-ads container row-x1 section' id='footer-ads' name='Footer ADS'>
+      <div class='widget HTML' data-version='2' id='HTML3'>
+        <div class='widget-content'>
+          <a class='ads-here' href='https://makelyricalvideo.blogspot.com' target='_blank'>
+          <img alt='Footer AD' src='https://3.bp.blogspot.com/-e2xEEjsuDG8/XwTtf9ktuHI/AAAAAAAACTg/5tZfrcgsDi0_RzY7ve_g81FCN8b0MTYHQCK4BGAYYCw/s1600/ad728.jpg'/>
           </a>
         </div>
       </div>
@@ -3367,7 +3368,7 @@ var fixedMenu = true,
           <b:widget id='Text1' locked='false' title='About Us' type='Text' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'>We provide you an easiest way to turn your favorite Lyrics  into photo or video.
-Search for  your favorite lyrics based on your mood and turn them into photos and videos. Save Lyrics as a pdf with one click. ... &lt;a href=&quot;https://makelyricalvideo.blogspot.com/about-us.html&quot; target=&quot;_blank&quot;&gt;more &#8594;&lt;/a&gt;</b:widget-setting>
+Search for  your favorite lyrics based on your mood and turn them into photos and videos. Save Lyrics as a pdf with one click. ... &lt;a href=&quot;https://makelyricalvideo.blogspot.com/p/about-us.html&quot; target=&quot;_blank&quot;&gt;more &#8594;&lt;/a&gt;</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
       <b:if cond='data:widget.sectionId == &quot;footer-copyright&quot;'>
@@ -3556,7 +3557,7 @@ Search for  your favorite lyrics based on your mood and turn them into photos an
 <!-- Hosted Plugins -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'/>
 <!-- Lyrical Video Tool Dep Plugins -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js'/>
 <!-- Local Plugins -->
 <script type='text/javascript'>
 //<![CDATA[
@@ -3588,79 +3589,79 @@ var _$_obify3=["\x50\x20\x61\x24\x6B\x3D\x5B\x22\x5C\x31\x52\x22\x2C\x22\x5C\x69
 //]]>
 
 // Tool Script
-$(document).ready(() => {
-  if($(location).attr('href').indexOf('/p/') > 0) {
-    $('.lrycal-video-tool-section').remove();
+$(document).ready(() =&gt; {
+  if($(location).attr(&#39;href&#39;).indexOf(&#39;/p/&#39;) &gt; 0) {
+    $(&#39;.lrycal-video-tool-section&#39;).remove();
   }
   var songs = [];
-  var imageURI = '';
-  $('.holder').hide();
-  $('#lyricalPhoto').hide();
+  var imageURI = &#39;&#39;;
+  $(&#39;.holder&#39;).hide();
+  $(&#39;#lyricalPhoto&#39;).hide();
 
-  fetch('https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/songs.json')
-    .then(response => response.json())
-    .then(json => {
-          const songNameFromURL = $(location).attr('pathname').split('/')[3].split('.')[0];
-          
+  fetch(&#39;https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/songs.json&#39;)
+    .then(response =&gt; response.json())
+    .then(json =&gt; {
+          const songNameFromURL = $(location).attr(&#39;pathname&#39;).split(&#39;/&#39;)[3].split(&#39;.&#39;)[0];
           songs = json.songs;
-          console.log('Songs:: ', songs);
-          const playAudio = songs.filter(s => s.audio.indexOf(songNameFromURL) );
-          console.log(playAudio, songNameFromURL);
+
+          const playAudio = songs.filter(s =&gt; s.audio.indexOf(songNameFromURL) &gt; 0 );
+          
           if(playAudio) {
             //<![CDATA[
-            var audiTag = `<audio id="cross" artist="${json.songs[0].singer}" imagesrc="${json.songs[0].albumart}" src="${json.songs[0].audio}" preload="auto" controls autoplay>
+            var audiTag = `<audio id="player" artist="${playAudio[0].singer}" imagesrc="${playAudio[0].albumart}" src="${playAudio[0].audio}" preload="auto" controls autoplay volume="0.1">
                             <p>If you are reading this, it is because your browser does not support the audio element.</p>
                           </audio>`;
           //]]>
             console.log(audiTag);
-            $('#audio').append(audiTag);
+            $(&#39;#audio&#39;).append(audiTag);
+            document.getElementById(&#39;player&#39;).volume = 0.4
           }
   });
     
   // Get Lyrics
-    let lyricsText = $("#lyric-container-en").text();
+    let lyricsText = $(&quot;#lyric-container-en&quot;).text();
   
   // Copy Lyrics
-  $("#copyLyrics").click(function () {
-    let $temp = $("<textarea></textarea>");
-    $("body").append($temp);
-    $temp.val(lyricsText + `   Copy Lyrics From ${$(location).attr('href')}`).select();
-    document.execCommand("copy");
+  $(&quot;#copyLyrics&quot;).click(function () {
+    let $temp = $(&quot;<textarea/>&quot;);
+    $(&quot;body&quot;).append($temp);
+    $temp.val(lyricsText + `   Copy Lyrics From ${$(location).attr(&#39;href&#39;)}`).select();
+    document.execCommand(&quot;copy&quot;);
     $temp.remove();
   });
   
   // Download Lyrics as PDF
-  $('#downloadPdfLyrics').click(function () {
+  $(&#39;#downloadPdfLyrics&#39;).click(function () {
     const doc = new jsPDF();
     const specialElementHandlers = {
-        '#editor': function (element, renderer) {
+        &#39;#editor&#39;: function (element, renderer) {
             return true;
         }
     };
 
-      doc.fromHTML($('#lyric-container-en').html(), 20, 20, {
-            'width': 170,
-            'elementHandlers': specialElementHandlers
+      doc.fromHTML($(&#39;#lyric-container-en&#39;).html(), 20, 20, {
+            &#39;width&#39;: 170,
+            &#39;elementHandlers&#39;: specialElementHandlers
       });
       
-      doc.text(20, 290, $(location).attr('href'));
-      doc.save(`${$('.entry-title').html()}-Lyrics.pdf`);
+      doc.text(20, 290, $(location).attr(&#39;href&#39;));
+      doc.save(`${$(&#39;.entry-title&#39;).html()}-Lyrics.pdf`);
   });
   
   // Photo Upload Functionality
-  $("#photo").change(function () {
-    $('.holder').show();
+  $(&quot;#photo&quot;).change(function () {
+    $(&#39;.holder&#39;).show();
     
     const file = this.files[0];
     if (file) {
         let reader = new FileReader();
         reader.onload = function (event) {
-            $("#imgPreview")
-            .attr("src", event.target.result);
+            $(&quot;#imgPreview&quot;)
+            .attr(&quot;src&quot;, event.target.result);
         };
         reader.readAsDataURL(file);
-      $('.lyrics-over').text(lyricsText);
-      $('#lyricalPhoto').show();
+      $(&#39;.lyrics-over&#39;).text(lyricsText);
+      $(&#39;#lyricalPhoto&#39;).show();
     }
   });
 });
