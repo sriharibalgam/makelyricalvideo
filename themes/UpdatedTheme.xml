@@ -1073,27 +1073,17 @@ content: '\f0c6  Upload Your Photo Here';
 font-family: Arial, 'Font Awesome 5 Free';
 color: #4309c2;
 }
-.holder {
-max-height: 550px;
-max-width: 550px;
-border: 2px solid black;position: relative; margin: 10px 0px;
-}
-.holder img {
-max-width: 100%;
-max-height: 550px;
-min-height: 500px;
-opacity: 0.4;
-min-width: 550px;
-backdrop-filter: contrast(0.5);
-}
+.holder { max-height: 550px; max-width: 550px; border: 2px solid black; position: relative; margin: 10px 0px; overflow: hidden; }
+.holder img { max-width: 90vw; max-height: 550px; opacity: 0.4; min-width: 60vw; backdrop-filter: contrast(0.5); width: 100%; height: auto !important; filter: grayscale(3); }
 input[type="file"] {
 border: 1px solid #ccc;display: block;padding: 6px 12px;cursor: pointer;border-radius: 25px
 }
+.lyrics-download-link { text-align: center }
 .lyrics-download-link > a { border-radius: 25px !important; }
 .upload-image, .upload-image > h6 { margin: 10px 0px; }
-.lyrics-over { position: absolute; top: 0px; left: 0px; font-size: 18px; text-align: justify; padding: 5px; color: #4412bd; font-weight: 500; font-family: cursive; text-overflow: clip; line-height: 16px; height: 550px; }
+.lyrics-over { position: absolute; top: 0px; left: 0px; font-size: 100%; text-align: justify; padding: 5px; color: #6401ae; font-weight: 500; text-overflow: clip; line-height: 16px; height: 550px; overflow: hidden; letter-spacing: -1px; opacity: 0.6; backdrop-filter: blur(5px); }
 #lyric-container-en {color: #6401ae; font-size: larger; font-weight: 800; transition: font-size ease-in 2s;}
-#lyricalPhoto {background-color: var(--button-bg); border-radius: 50%; height: 40px; width: 40px; position: relative; top: -23px; left: 533px;}
+#lyricalPhoto { background-color: var(--button-bg); border-radius: 50%; height: 40px; width: 40px; position: relative; top: -10px; left: 40%; }
 .button.downloadpdf:before {content: '\f019'; padding: 0; margin-left: -9px; height: 20px; width: 20px; font-size: 20px;}
 .lrycal-video-tool-section {margin: 10px 0px; padding: 10px; border-top: 2px solid #6401ae; border-radius: 9px; border-bottom: 1px solid #6401ae;}
 audio {
@@ -1117,6 +1107,7 @@ box-shadow: 15px 15px 20px #470073;
 transform: scale(1.05);
 }
 #audio { position: fixed; top: 60%; right: 34%;}
+.postLyricMeta { margin: 20px 0px; font-size: 102%; font-weight: 500; text-align: justify; }
 @media (max-width: 1164px) {
 #outer-wrapper,.is-boxed #outer-wrapper,.is-boxed .headerify-inner{width:100%;max-width:100%;margin:0}
 .row-x1{width:100%;max-width:100%}
@@ -1362,11 +1353,11 @@ var fixedMenu = true,
     </b:includable>
     <b:includable id='theme-custom-lang'>
       <b:switch var='data:message'>
-        <b:case value='prevPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Previous Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Anterior<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Postagem Anterior<b:else/><data:messages.newer/></b:if>
-        <b:case value='nextPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Next Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Siguiente<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Próxima Postagem<b:else/><data:messages.older/></b:if>
-<b:case value='followByEmailText'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Don&#39;t worry, we don&#39;t spam.<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>No te preocupes, no enviamos spam.<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Não se preocupe, não enviamos spam.<b:else/><data:messages.getEmailNotifications/></b:if>
-<b:case value='loadMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Load More<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Carga Más<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Carregar Mais<b:else/><data:messages.loadMorePosts/></b:if>
-<b:case value='noMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>That is All<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Eso es Todo<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Isso é Tudo<b:else/><data:messages.noResultsFound/></b:if>
+        <b:case value='prevPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Previous Post<b:elseif cond='data:blog.locale.language == &quot;te&quot;'/>ముందు పోస్ట్ చూడు<b:elseif cond='data:blog.locale.language == &quot;hi&quot;'/>पिछली पोस्ट देखें<b:else/><data:messages.newer/></b:if>
+        <b:case value='nextPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Next Post<b:elseif cond='data:blog.locale.language == &quot;te&quot;'/>తర్వాత పోస్ట్ చూడు<b:elseif cond='data:blog.locale.language == &quot;hi&quot;'/>अगला पोस्ट देखें<b:else/><data:messages.older/></b:if>
+        <b:case value='followByEmailText'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Don&#39;t worry, we don&#39;t spam.<b:elseif cond='data:blog.locale.language == &quot;te&quot;'/>చింతించకండి మేము స్పామ్ చేయము<b:elseif cond='data:blog.locale.language == &quot;hi&quot;'/>चिंता न करें हम स्पैम नहीं करेंगे.<b:else/><data:messages.getEmailNotifications/></b:if>
+        <b:case value='loadMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Load More<b:elseif cond='data:blog.locale.language == &quot;te&quot;'/>ఇంకా చూడు<b:elseif cond='data:blog.locale.language == &quot;hi&quot;'/>और ढेको<b:else/><data:messages.loadMorePosts/></b:if>
+        <b:case value='noMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>That is All<b:elseif cond='data:blog.locale.language == &quot;te&quot;'/>అంతే<b:elseif cond='data:blog.locale.language == &quot;hi&quot;'/>बस इतना ही<b:else/><data:messages.noResultsFound/></b:if>
       </b:switch>
     </b:includable>
     <b:includable id='widget-title'>
@@ -2506,18 +2497,18 @@ var fixedMenu = true,
                       <b:widget-setting name='text-10'>Tamil Songs</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='link-1'>#</b:widget-setting>
-                      <b:widget-setting name='link-2'>/</b:widget-setting>
+                      <b:widget-setting name='link-2'>/search/label/Trending%20Songs</b:widget-setting>
                       <b:widget-setting name='link-0'>/</b:widget-setting>
-                      <b:widget-setting name='link-11'>/search/label/Punjabi</b:widget-setting>
+                      <b:widget-setting name='link-11'>/search/label/Punjabi%20Songs</b:widget-setting>
                       <b:widget-setting name='link-10'>/search/label/Tamil%20Songs</b:widget-setting>
                       <b:widget-setting name='text-9'>Telugu Songs</b:widget-setting>
                       <b:widget-setting name='link-9'>/search/label/Telugu%20Songs</b:widget-setting>
                       <b:widget-setting name='text-8'>Hindhi Songs</b:widget-setting>
                       <b:widget-setting name='link-7'>/404</b:widget-setting>
-                      <b:widget-setting name='link-8'>/search/label/Hindhi%20Songs</b:widget-setting>
+                      <b:widget-setting name='link-8'>/search/label/Hindi%20Songs</b:widget-setting>
                       <b:widget-setting name='link-5'>/</b:widget-setting>
                       <b:widget-setting name='link-6'>/</b:widget-setting>
-                      <b:widget-setting name='link-3'>/</b:widget-setting>
+                      <b:widget-setting name='link-3'>/search/label/Love%20Song</b:widget-setting>
                       <b:widget-setting name='link-4'>/</b:widget-setting>
                       <b:widget-setting name='text-1'>Movie Albums</b:widget-setting>
                       <b:widget-setting name='text-0'>Home</b:widget-setting>
@@ -2903,7 +2894,7 @@ var fixedMenu = true,
             <b:includable id='postCategory' var='post'>
       <!-- Post Label/Category -->
       <b:if cond='data:post.labels'>
-        <span class='entry-category m-item'><data:post.labels.first.name/></span>
+        <span class='entry-category m-item'><data:post.labels.last.name/></span>
       </b:if>
     </b:includable>
             <b:includable id='postCommentsAndAd' var='post'>
@@ -3589,79 +3580,81 @@ var _$_obify3=["\x50\x20\x61\x24\x6B\x3D\x5B\x22\x5C\x31\x52\x22\x2C\x22\x5C\x69
 //]]>
 
 // Tool Script
-$(document).ready(() =&gt; {
-  if($(location).attr(&#39;href&#39;).indexOf(&#39;/p/&#39;) &gt; 0) {
-    $(&#39;.lrycal-video-tool-section&#39;).remove();
+$(document).ready(() => {
+  if($(location).attr('href').indexOf('/p/') > 0) {
+    $('.lrycal-video-tool-section').remove();
   }
   var songs = [];
-  var imageURI = &#39;&#39;;
-  $(&#39;.holder&#39;).hide();
-  $(&#39;#lyricalPhoto&#39;).hide();
+  var imageURI = '';
+  $('.holder').hide();
+  $('#lyricalPhoto').hide();
 
-  fetch(&#39;https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/songs.json&#39;)
-    .then(response =&gt; response.json())
-    .then(json =&gt; {
-          const songNameFromURL = $(location).attr(&#39;pathname&#39;).split(&#39;/&#39;)[3].split(&#39;.&#39;)[0];
-          songs = json.songs;
-
-          const playAudio = songs.filter(s =&gt; s.audio.indexOf(songNameFromURL) &gt; 0 );
+  fetch('https://raw.githubusercontent.com/sriharibalgam/makelyricalvideo/master/songs.json')
+    .then(response => response.json())
+    .then(json => {
+          const getPathFromURL = $(location).attr('pathname').split('/');
+          const songNameFromURL = getPathFromURL.length > 2 ? getPathFromURL[3]?.split('.')[0] : [];
           
-          if(playAudio) {
+          const playAudio = json.songs.filter(s => s.audio.indexOf(songNameFromURL) > 0 );
+          
+          
+          if(playAudio.length > 0) {
             //<![CDATA[
-            var audiTag = `<audio id="player" artist="${playAudio[0].singer}" imagesrc="${playAudio[0].albumart}" src="${playAudio[0].audio}" preload="auto" controls autoplay volume="0.1">
+            var audiTag = `<audio id="player" artist="" imagesrc="${playAudio[0]?.albumart}" src="${playAudio[0]?.audio}" preload="auto" controls autoplay volume="0.5">
                             <p>If you are reading this, it is because your browser does not support the audio element.</p>
                           </audio>`;
           //]]>
             console.log(audiTag);
-            $(&#39;#audio&#39;).append(audiTag);
-            document.getElementById(&#39;player&#39;).volume = 0.4
+            $('#audio').append(audiTag);
+            var setVolume = document.getElementById('player');
+            setVolume != null ? setVolume.volume = 0.5 : '';
           }
   });
     
   // Get Lyrics
-    let lyricsText = $(&quot;#lyric-container-en&quot;).text();
+    let lyricsText = $('#lyric-container-en').text();
   
   // Copy Lyrics
-  $(&quot;#copyLyrics&quot;).click(function () {
-    let $temp = $(&quot;<textarea/>&quot;);
-    $(&quot;body&quot;).append($temp);
-    $temp.val(lyricsText + `   Copy Lyrics From ${$(location).attr(&#39;href&#39;)}`).select();
-    document.execCommand(&quot;copy&quot;);
+  $('#copyLyrics').click(function () {
+    let $temp = $('<textarea/>');
+    $('body').append($temp);
+    $temp.val(lyricsText + `   Copy Lyrics From ${$(location).attr('href')}`).select();
+    document.execCommand('copy');
     $temp.remove();
   });
   
   // Download Lyrics as PDF
-  $(&#39;#downloadPdfLyrics&#39;).click(function () {
+  $('#downloadPdfLyrics').click(function () {
     const doc = new jsPDF();
     const specialElementHandlers = {
-        &#39;#editor&#39;: function (element, renderer) {
+        '#editor': function (element, renderer) {
             return true;
         }
     };
 
-      doc.fromHTML($(&#39;#lyric-container-en&#39;).html(), 20, 20, {
-            &#39;width&#39;: 170,
-            &#39;elementHandlers&#39;: specialElementHandlers
+      doc.fromHTML($('#lyric-container-en').html(), 20, 20, {
+            'width': 170,
+            'elementHandlers': specialElementHandlers
       });
       
-      doc.text(20, 290, $(location).attr(&#39;href&#39;));
-      doc.save(`${$(&#39;.entry-title&#39;).html()}-Lyrics.pdf`);
+      doc.text(20, 290, $(location).attr('href'));
+      doc.save(`${$('.entry-title').html()}-Lyrics.pdf`);
   });
   
   // Photo Upload Functionality
-  $(&quot;#photo&quot;).change(function () {
-    $(&#39;.holder&#39;).show();
+  $('#photo').change(function () {
+    $('.holder').show();
     
     const file = this.files[0];
     if (file) {
         let reader = new FileReader();
         reader.onload = function (event) {
-            $(&quot;#imgPreview&quot;)
-            .attr(&quot;src&quot;, event.target.result);
+            $('#imgPreview')
+            .attr('src', event.target.result);
         };
         reader.readAsDataURL(file);
-      $(&#39;.lyrics-over&#39;).text(lyricsText);
-      $(&#39;#lyricalPhoto&#39;).show();
+      $('.lyrics-over').text(lyricsText);
+      $('#lyricalPhoto').show();
     }
   });
 });

@@ -45,7 +45,18 @@
         </select>
     </body>
 </html>
-
+<!-- External Song Load into Post
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audiTag = <audio id="player" src="REPLACE_SONG_URL" preload="auto" controls autoplay volume="0.5">
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>;
+        document.getElementById('audio').innerHTML = audiTag;
+        var setVol = document.getElementById('player');
+        if(setVol != null) { setVol.volume = 0.5; }
+    });
+</script>
+ -->
 <script>
     const rawLyric = document.getElementById('rawLyric');
     const generatePost = document.getElementById('generatePost');
@@ -61,15 +72,38 @@
         
         // Set selected Option
         var lyricLanguage = select.options[select.selectedIndex].value;
-        var blogPost = `<div id='lyric-container-${lyricLanguage}'><h3> Song Lyrics</h3>`;
+        var blogPost = `<div id='lyric-container-${lyricLanguage}'><h3>${splitLyrics[0] +' '+ splitLyrics[1]} Song Lyrics</h3>`;
 
         // Generate BlogPost
         const generatedPostHTML = splitLyrics.forEach(lyrics => {
             blogPost += lyrics === '' ? '<div> <br/> </div>' : '<div>'+(lyrics)+'</div>'
         });
         blogPost += `</div>`;
-        
-        // console.log(blogPost);
+
+        const postAdditional = `
+        <div class='postLyricMeta'>Have you ever wondered about how to make a lyrical video or lyrical photo with your photo or your loved ones. .? <br/>
+Do not worry you are in the right place, <a href='https://makelyricalvideo.blogspot.com/search/label/Trending%20Songs' rel='canonical' title='Make Lyrical Video'>Make Lyrical Video</a> will help you to make an attention grabbing lyrical video within few seconds with <strong>*${splitLyrics[0] +' '+ splitLyrics[1]}*</strong>.
+Search for  your favourite song lyrics scroll to the bottom of the lyrics click on <strong>**Upload Your Photo Here**</strong> upload a photo..
+Boom... Your Portrait photo with lyrics is ready.. Click on Download icon and share it with your loved ones.
+Share Photo and Song lyrics on Whatsapp status, Facebook status, Twitter and Pinterest with one click.</div>
+<div>Say Bye Bye to Selecting whole text to have your favourite song Lyrics, Just click on <strong>*Copy Lyrics*</strong> or Download ${splitLyrics[0] +' '+ splitLyrics[1]} lyrics as a pdf with one click.</div>`;
+
+        const audioTag = `<audio id="player" src="REPLACE_SONG_URL" preload="auto" controls autoplay volume="0.5">
+                            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                    </audio>`;
+
+        const addExteralAudioScript = `
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var audiTag = ${audioTag};
+                    document.getElementById('audio').innerHTML = audiTag;
+                    var setVol = document.getElementById('player');
+                    if(setVol != null) { setVol.volume = 0.5; }
+                });
+            <\/script>`;
+
+        if (lyricLanguage === 'en') { blogPost += postAdditional + addExteralAudioScript; }
         rawLyric.value = blogPost;
     }
     
